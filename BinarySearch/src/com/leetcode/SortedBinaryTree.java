@@ -7,7 +7,7 @@ public class SortedBinaryTree {
     }
 
     static int search(int[] nums, int target) {
-        int pivot = findPeakWithDuplicates(nums);
+        int pivot = findPivotWithDuplicates(nums);
         if (pivot == -1)
             return binarySearch(nums, target, 0, nums.length - 1);
 
@@ -58,7 +58,7 @@ public class SortedBinaryTree {
     }
 
     // work with duplicate values
-    static int findPeakWithDuplicates(int[] a) {
+    static int findPivotWithDuplicates(int[] a) {
         int start = 0, end = a.length - 1;
 
         while (start <= end) {
