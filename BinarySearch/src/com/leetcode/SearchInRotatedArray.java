@@ -1,13 +1,13 @@
 package com.leetcode;
 
-public class SortedBinaryTree {
+public class SearchInRotatedArray {
     public static void main(String[] args) {
         int[] a = {4, 5, 6, 7, 0, 1, 2};
         System.out.println(search(a, 0));
     }
 
     static int search(int[] nums, int target) {
-        int pivot = findPivotWithDuplicates(nums);
+        int pivot = findPeakWithDuplicates(nums);
         if (pivot == -1)
             return binarySearch(nums, target, 0, nums.length - 1);
 
@@ -58,7 +58,7 @@ public class SortedBinaryTree {
     }
 
     // work with duplicate values
-    static int findPivotWithDuplicates(int[] a) {
+    static int findPeakWithDuplicates(int[] a) {
         int start = 0, end = a.length - 1;
 
         while (start <= end) {

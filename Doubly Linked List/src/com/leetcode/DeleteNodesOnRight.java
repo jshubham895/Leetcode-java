@@ -42,6 +42,7 @@ public class DeleteNodesOnRight {
         ll.printLL(head);
         head = deleteNodesOnRightSide(head);
         ll.printLL(head);
+        printNthFromLast(head,3);
     }
 
     public static Node deleteNodesOnRightSide(Node head){
@@ -54,5 +55,49 @@ public class DeleteNodesOnRight {
         head.next = nextNode;
 
         return head;
+    }
+
+    static void printNthFromLast(Node head,int n)
+    {
+        Node main_ptr = head;
+        Node ref_ptr = head;
+
+        int count = 0;
+        if (head != null)
+        {
+            while (count < n)
+            {
+                if (ref_ptr == null)
+                {
+                    System.out.println(n
+                            + " is greater than the no "
+                            + " of nodes in the list");
+                    return;
+                }
+                ref_ptr = ref_ptr.next;
+                count++;
+            }
+
+            if(ref_ptr == null)
+            {
+
+                if(head != null)
+                    System.out.println("Node no. " + n +
+                            " from last is " +
+                            head.data);
+            }
+            else
+            {
+
+                while (ref_ptr != null)
+                {
+                    main_ptr = main_ptr.next;
+                    ref_ptr = ref_ptr.next;
+                }
+                System.out.println("Node no. " + n +
+                        " from last is " +
+                        main_ptr.data);
+            }
+        }
     }
 }
