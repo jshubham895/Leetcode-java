@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BinaryTree/BinaryTree.iml" filepath="$PROJECT_DIR$/BinaryTree/BinaryTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Doubly Linked List/Doubly Linked List.iml" filepath="$PROJECT_DIR$/Doubly Linked List/Doubly Linked List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graphs/Graphs.iml" filepath="$PROJECT_DIR$/Graphs/Graphs.iml" />
       <module fileurl="file://$PROJECT_DIR$/Leetcode-java.iml" filepath="$PROJECT_DIR$/Leetcode-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Linked List/Linked List.iml" filepath="$PROJECT_DIR$/Linked List/Linked List.iml" />
       <module fileurl="file://$PROJECT_DIR$/SearchingAndSorting/SearchingAndSorting.iml" filepath="$PROJECT_DIR$/SearchingAndSorting/SearchingAndSorting.iml" />
